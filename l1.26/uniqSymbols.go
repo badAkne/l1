@@ -9,7 +9,7 @@ func isUnique(s string) bool {
 	runeMap := make(map[rune]int)
 	s = strings.ToLower(s)
 
-	for _, char := range []rune(s) {
+	for _, char := range s {
 		if _, exist := runeMap[char]; exist {
 			return false
 		}
